@@ -177,7 +177,7 @@ void concatenate(struct vector *combined, struct vector *a, struct vector *b){
 void slice(struct vector *sliced, struct vector *source, int start, int end){
 
     //Initializing
-    sliced->size = source->size;
+    sliced->size = (end - start);
     sliced->capacity = 10;
     sliced->arr = (char*)malloc(sizeof(char)*sliced->capacity);
 
